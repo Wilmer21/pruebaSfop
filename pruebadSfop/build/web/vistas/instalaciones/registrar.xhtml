@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="Create/Edit"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Fechainstalacion:" for="fechainstalacion" />
+                    <h:inputText id="fechainstalacion" value="#{controladorInstalacion.instalacion.fechainstalacion}" title="Fechainstalacion" />
+                    <h:outputLabel value="Codpedido:" for="codpedido" />
+                    <h:selectOneMenu id="codpedido" value="#{controladorInstalacion.id}" title="Codpedido" required="true" requiredMessage="The Codpedido field is required." converterMessage="Error la conversion no se logro!">
+                        <!-- TODO: update below reference to list of available items-->
+                        <f:selectItems value="#{controladorInstalacion.items}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid> 
+                <h:commandButton action="#{controladorInstalacion.registrar()}" value="Registar"/>
+            </h:form>
+        </f:view>
+
+    </h:body>
+</html>
+
