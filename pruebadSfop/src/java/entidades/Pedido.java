@@ -64,7 +64,7 @@ public class Pedido implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "Cod_usuario")
-    private int codusuario;
+    private Usuario codusuario;
     @JoinColumn(name = "Cod_producto", referencedColumnName = "Cod_producto")
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     private Producto codproducto;
@@ -78,10 +78,12 @@ public class Pedido implements Serializable {
         this.codpedido = codpedido;
     }
 
-    public Pedido(Integer codpedido, int codusuario) {
-        this.codpedido = codpedido;
+    public Pedido(Usuario codusuario, Producto codproducto) {
         this.codusuario = codusuario;
+        this.codproducto = codproducto;
     }
+
+    
 
     public Integer getCodpedido() {
         return codpedido;
@@ -131,11 +133,11 @@ public class Pedido implements Serializable {
         this.fechaentrega = fechaentrega;
     }
 
-    public int getCodusuario() {
+    public Usuario getCodusuario() {
         return codusuario;
     }
 
-    public void setCodusuario(int codusuario) {
+    public void setCodusuario(Usuario codusuario) {
         this.codusuario = codusuario;
     }
 

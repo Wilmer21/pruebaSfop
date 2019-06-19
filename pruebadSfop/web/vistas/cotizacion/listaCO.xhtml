@@ -12,35 +12,36 @@
 
             <h:form>
                 <h1><h:outputText value="List"/></h1>
-                <h:dataTable value="#{controladorProduccion.consultarTodo()}" var="item">
+                <h:dataTable value="#{controladorCotizacion.consultarTodos()}" var="item">
                     <h:column>
                         <f:facet name="header">
-                            <h:outputText value="Codproduccion"/>
+                            <h:outputText value="Codcotizacion"/>
                         </f:facet>
-                        <h:outputText value="#{item.codproduccion}"/>
+                        <h:outputText value="#{item.codcotizacion}"/>
                     </h:column>
                     <h:column>
                         <f:facet name="header">
-                            <h:outputText value="Fechainicioproduccion"/>
+                            <h:outputText value="Cantidadproducto"/>
                         </f:facet>
-                        <h:outputText value="#{item.fechainicioproduccion}"/>
+                        <h:outputText value="#{item.cantidadproducto}"/>
                     </h:column>
                     <h:column>
                         <f:facet name="header">
-                            <h:outputText value="Tipoproduccion"/>
+                            <h:outputText value="Valorcotizacion"/>
                         </f:facet>
-                        <h:outputText value="#{item.tipoproduccion}"/>
+                        <h:outputText value="#{item.valorcotizacion}"/>
                     </h:column>
                     <h:column>
                         <f:facet name="header">
-                            <h:outputText value="Codproducto"/>
+                            <h:outputText value="Codusuario"/>
                         </f:facet>
-                        <h:outputText value="#{item.codproducto}"/>
+                        <h:outputText value="#{item.codusuario}"/>
+                        <h:commandButton action="#{controladorCotizacion.preEditar(cotizacion)}" value="Editar"/>
+                        <h:commandButton action="#{controladorCotizacion.eliminar(cotizacion)}" value="Eliminar"/>
                     </h:column>
                 </h:dataTable>
             </h:form>
         </f:view>
-
 
     </h:body>
 </html>

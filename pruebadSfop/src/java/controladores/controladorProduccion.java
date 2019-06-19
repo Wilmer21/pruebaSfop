@@ -61,7 +61,7 @@ public class controladorProduccion {
         this.producto = producto;
         }
 
-        public Integer getId() {
+        public int getId() {
         return id;
         }
 
@@ -86,7 +86,7 @@ public class controladorProduccion {
         public List<SelectItem> getItems()
         {
             return produccionFacade.getItems();
-        }
+        }      
         public List<Produccion> consultarTodo()
         {
             return produccionFacade.findAll();

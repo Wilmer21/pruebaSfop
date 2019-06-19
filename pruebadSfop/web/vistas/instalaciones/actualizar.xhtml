@@ -20,12 +20,13 @@
                     <h:outputLabel value="Codpedido:" for="codpedido" />
                     <h:selectOneMenu id="codpedido" value="#{controladorInstalacion.instalacion.codpedido}" title="Codpedido" required="true" requiredMessage="The Codpedido field is required.">
                         <!-- TODO: update below reference to list of available items-->
-                        <f:selectItems value="#{controladorInstalacion.consultartodo()}" var="instalacion" itemValue="#{instalacion.codinstalacion}" itemLabel="#{instalacion.fechainstalacion}"/>
+                        <f:selectItems value="#{controladorInstalacion.items}"/>
                     </h:selectOneMenu>
-                </h:panelGrid> 
+                </h:panelGrid>
                 <h:commandButton action="#{controladorInstalacion.editar(instalacion)}" value="Editar"/>
             </h:form>
         </f:view>
+
 
     </h:body>
 </html>

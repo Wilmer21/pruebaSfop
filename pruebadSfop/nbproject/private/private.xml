@@ -3,13 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/hachi/OneDrive/Documentos/NetBeansProjects/pruebaSeysPro/web/vistas/instalaciones/actualizar.xhtml</file>
-            <file>file:/C:/Users/hachi/OneDrive/Documentos/NetBeansProjects/pruebaSeysPro/web/vistas/instalaciones/lista.xhtml</file>
-            <file>file:/C:/Users/hachi/OneDrive/Documentos/NetBeansProjects/pruebaSeysPro/src/java/entidades/Instalacion.java</file>
-            <file>file:/C:/Users/hachi/OneDrive/Documentos/NetBeansProjects/pruebaSeysPro/src/java/entidades/Pedido.java</file>
-            <file>file:/C:/Users/hachi/OneDrive/Documentos/NetBeansProjects/pruebaSeysPro/src/java/facade/InstalacionFacade.java</file>
-            <file>file:/C:/Users/hachi/OneDrive/Documentos/NetBeansProjects/pruebaSeysPro/src/java/controladores/controladorInstalacion.java</file>
-            <file>file:/C:/Users/hachi/OneDrive/Documentos/NetBeansProjects/pruebaSeysPro/web/vistas/instalaciones/registrar.xhtml</file>
+            <file>file:/C:/Users/hachi/OneDrive/Documentos/NetBeansProjects/pruebaSfop/pruebadSfop/src/java/facade/ProduccionFacade.java</file>
+            <file>file:/C:/Users/hachi/OneDrive/Documentos/NetBeansProjects/pruebaSfop/pruebadSfop/src/java/controladores/controladorProduccion.java</file>
+            <file>file:/C:/Users/hachi/OneDrive/Documentos/NetBeansProjects/pruebaSfop/pruebadSfop/web/vistas/pedido/listaPE.xhtml</file>
+            <file>file:/C:/Users/hachi/OneDrive/Documentos/NetBeansProjects/pruebaSfop/pruebadSfop/src/java/facade/PedidoFacade.java</file>
+            <file>file:/C:/Users/hachi/OneDrive/Documentos/NetBeansProjects/pruebaSfop/pruebadSfop/src/java/controladores/controladorPedido.java</file>
         </group>
     </open-files>
 </project-private>

@@ -12,37 +12,35 @@
 
             <h:form>
                 <h1><h:outputText value="List"/></h1>
-                <h:dataTable value="#{controladorProduccion.consultarTodo()}" var="produccion">
+                <h:dataTable value="#{controladorProduccion.consultarTodo()}" var="item">
                     <h:column>
                         <f:facet name="header">
                             <h:outputText value="Codproduccion"/>
                         </f:facet>
-                        <h:outputText value="#{produccion.codproduccion}"/>
+                        <h:outputText value="#{item.codproduccion}"/>
                     </h:column>
                     <h:column>
                         <f:facet name="header">
                             <h:outputText value="Fechainicioproduccion"/>
                         </f:facet>
-                        <h:outputText value="#{produccion.fechainicioproduccion}"/>
+                        <h:outputText value="#{item.fechainicioproduccion}"/>
                     </h:column>
                     <h:column>
                         <f:facet name="header">
                             <h:outputText value="Tipoproduccion"/>
                         </f:facet>
-                        <h:outputText value="#{produccion.tipoproduccion}"/>
+                        <h:outputText value="#{item.tipoproduccion}"/>
                     </h:column>
                     <h:column>
                         <f:facet name="header">
                             <h:outputText value="Codproducto"/>
                         </f:facet>
-                        <h:outputText value="#{produccion.codproducto}"/>
-                        <h:commandButton action="#{controladorProduccion.preEditar(produccion)}" value="Editar"/> 
-                        <h:commandButton action="#{controladorProduccion.eliminar(produccion)}" value="Eliminar"/>
-                    
+                        <h:outputText value="#{item.codproducto}"/>
                     </h:column>
                 </h:dataTable>
             </h:form>
         </f:view>
+
 
     </h:body>
 </html>

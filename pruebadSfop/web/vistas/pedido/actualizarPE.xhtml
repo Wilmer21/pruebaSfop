@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="Create/Edit"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Codpedido:" for="codpedido" />
+                    <h:inputText id="codpedido" value="#{controladorPedido.pedido.codpedido}" title="Codpedido" required="true" requiredMessage="The Codpedido field is required."/>
+                    <h:outputLabel value="Tipopedido:" for="tipopedido" />
+                    <h:inputText id="tipopedido" value="#{controladorPedido.pedido.tipopedido}" title="Tipopedido" />
+                    <h:outputLabel value="Cantidadmaterial:" for="cantidadmaterial" />
+                    <h:inputText id="cantidadmaterial" value="#{controladorPedido.pedido.cantidadmaterial}" title="Cantidadmaterial" />
+                    <h:outputLabel value="Valortotal:" for="valortotal" />
+                    <h:inputText id="valortotal" value="#{controladorPedido.pedido.valortotal}" title="Valortotal" />
+                    <h:outputLabel value="Fechaentrada:" for="fechaentrada" />
+                    <h:inputText id="fechaentrada" value="#{controladorPedido.pedido.fechaentrada}" title="Fechaentrada" />
+                    <h:outputLabel value="Fechaentrega:" for="fechaentrega" />
+                    <h:inputText id="fechaentrega" value="#{controladorPedido.pedido.fechaentrega}" title="Fechaentrega" />
+                    <h:outputLabel value="Codusuario:" for="codusuario" />
+                    <h:inputText id="codusuario" value="#{controladorPedido.pedido.codusuario}" title="Codusuario" required="true" requiredMessage="The Codusuario field is required."/>
+                    <h:outputLabel value="Codproducto:" for="codproducto" />
+                    <h:selectOneMenu id="codproducto" value="#{controladorPedido.pedido.codproducto}" title="Codproducto" required="true" requiredMessage="The Codproducto field is required.">
+                        <!-- TODO: update below reference to list of available items-->
+                        <f:selectItems value="#{fixme}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+            </h:form>
+        </f:view>
+
+    </h:body>
+</html>
+
